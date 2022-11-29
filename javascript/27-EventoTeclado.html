@@ -21,14 +21,22 @@
                 F1..F12, ALT, CTRL, SHIFT...
             */
             
-            function exibir(){
-                
+            function exibir(){             
                 //Obter o valor do campo texto
                 var campo = document.getElementById("campo").value;
-                
+               
                 //Exibir o conteúdo digitado no campo
                 alert(campo);
-                
+            }
+
+            function show(){
+                var campo1 = document.getElementById("campo1").value;
+                alert(campo1);
+            }
+
+            function see(){
+                var campo2 = document.getElementById("campo2").value;
+                alert(campo2);
             }
             
         </script>
@@ -36,7 +44,9 @@
     
     <body> 
         
-        <input type="text" id="campo" onkeyup="exibir()">    
+        <input type="text" id="campo" onkeyUp="exibir()"></br></br>
+        <input type="text" id="campo1" onKeyDown="show()"></br></br>
+        <input type="text" id="campo2" onKeyPress="see()">
                 
     </body>
 </html>
