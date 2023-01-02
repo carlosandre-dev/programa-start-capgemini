@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./segundo-componente.component.css']
 })
 export class SegundoComponenteComponent {
-  nome = "Carlos André";
-  dataNascimento = "1980-08-20";
+  nome = "Proway";
+  anoFundacao = "1995";
+  urlImagem = "/assets/logo_proway.png";
+
+  mostrarAnoFundacao() {
+    alert(`A empresa Proway foi fundada em: ${this.anoFundacao}`)
+  }
 
 }
